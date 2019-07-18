@@ -1,5 +1,6 @@
+ARG TSDB_VERSION_TAG
 ARG PG_VERSION_TAG
-FROM timescale/timescaledb:1.3.2-${PG_VERSION_TAG}
+FROM timescale/timescaledb:${TSDB_VERSION_TAG}-${PG_VERSION_TAG}
 
 MAINTAINER Timescale https://www.timescale.com
 
